@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #body {
+            margin: auto;
+            background-color: orangered;
+            width: 50%;
+            height: 500px;
+            text-align: center;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="body">
+        <h1>Quiz Application</h1>
+        <button onclick="startQuiz()" id="start">Start</button>
+
+        <div id="questionContainer">
+            <h1 id="title"></h1>
+            <div id="option"></div>
+        </div>
+
+        <button class="hide" id="nextBtn" onclick="nextQues()">Next</button>
+        <div class="hide" id="Result"></div>
+        <button id="Reset" class="hide" onclick="restartQuiz()">Restart</button>
+    </div>
+</body>
+
+</html>
